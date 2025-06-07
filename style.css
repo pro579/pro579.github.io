@@ -1,0 +1,56 @@
+body {
+    background-image: url(bgnew.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Popins';
+}
+form {
+    position: absolute;
+    padding: 30px 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    text-align: center;
+}
+.input-group {
+    position: relative;
+    margin: 10px 0 20px;
+}
+input {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+input:focus, 
+input:valid {
+    outline: none;
+    border: 2px solid dimgray;
+}
+label {
+    position: absolute;
+    padding: 0 8px;
+    left: 5px;
+    top: 10px;
+    color: blue;
+    background: transparent;
+}
+input:focus ~ label,
+input:valid ~ label {
+    top: -9px;
+    font-size: 14px;
+    color: dimgray;
+}
+button {
+    padding: 10px 0;
+    width: 100%;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+}
+a {
+    text-decoration: none;
+}
